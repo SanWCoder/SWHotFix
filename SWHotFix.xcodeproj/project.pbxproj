@@ -14,9 +14,12 @@
 		2DFAD46E236BD17C003CA177 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DFAD46D236BD17C003CA177 /* Assets.xcassets */; };
 		2DFAD471236BD17C003CA177 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFAD46F236BD17C003CA177 /* LaunchScreen.storyboard */; };
 		2DFAD474236BD17C003CA177 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFAD473236BD17C003CA177 /* main.m */; };
+		2DFAD47C236BD40C003CA177 /* SWHotFix.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFAD47B236BD40C003CA177 /* SWHotFix.m */; };
+		8CDA80F0648FCA631EB5F16A /* libPods-SWHotFix.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA3338B74730CF670F180BDC /* libPods-SWHotFix.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02BD770258F9ABEBD9FAB2F5 /* Pods-SWHotFix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWHotFix.release.xcconfig"; path = "Target Support Files/Pods-SWHotFix/Pods-SWHotFix.release.xcconfig"; sourceTree = "<group>"; };
 		2DFAD45E236BD17A003CA177 /* SWHotFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWHotFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFAD461236BD17A003CA177 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DFAD462236BD17A003CA177 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +32,10 @@
 		2DFAD470236BD17C003CA177 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DFAD472236BD17C003CA177 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DFAD473236BD17C003CA177 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DFAD47A236BD40C003CA177 /* SWHotFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWHotFix.h; sourceTree = "<group>"; };
+		2DFAD47B236BD40C003CA177 /* SWHotFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWHotFix.m; sourceTree = "<group>"; };
+		CEEE4707F3A64700F49B3380 /* Pods-SWHotFix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWHotFix.debug.xcconfig"; path = "Target Support Files/Pods-SWHotFix/Pods-SWHotFix.debug.xcconfig"; sourceTree = "<group>"; };
+		DA3338B74730CF670F180BDC /* libPods-SWHotFix.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SWHotFix.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDA80F0648FCA631EB5F16A /* libPods-SWHotFix.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1305CB15C18880D999C84301 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEEE4707F3A64700F49B3380 /* Pods-SWHotFix.debug.xcconfig */,
+				02BD770258F9ABEBD9FAB2F5 /* Pods-SWHotFix.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2DFAD455236BD17A003CA177 = {
 			isa = PBXGroup;
 			children = (
 				2DFAD460236BD17A003CA177 /* SWHotFix */,
 				2DFAD45F236BD17A003CA177 /* Products */,
+				1305CB15C18880D999C84301 /* Pods */,
+				A7C023E4972F2EB1887C0FF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +80,8 @@
 		2DFAD460236BD17A003CA177 /* SWHotFix */ = {
 			isa = PBXGroup;
 			children = (
+				2DFAD47A236BD40C003CA177 /* SWHotFix.h */,
+				2DFAD47B236BD40C003CA177 /* SWHotFix.m */,
 				2DFAD461236BD17A003CA177 /* AppDelegate.h */,
 				2DFAD462236BD17A003CA177 /* AppDelegate.m */,
 				2DFAD464236BD17A003CA177 /* SceneDelegate.h */,
@@ -76,6 +97,14 @@
 			path = SWHotFix;
 			sourceTree = "<group>";
 		};
+		A7C023E4972F2EB1887C0FF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA3338B74730CF670F180BDC /* libPods-SWHotFix.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +112,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DFAD477236BD17C003CA177 /* Build configuration list for PBXNativeTarget "SWHotFix" */;
 			buildPhases = (
+				0841C011124B87377864CF7E /* [CP] Check Pods Manifest.lock */,
 				2DFAD45A236BD17A003CA177 /* Sources */,
 				2DFAD45B236BD17A003CA177 /* Frameworks */,
 				2DFAD45C236BD17A003CA177 /* Resources */,
@@ -141,6 +171,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0841C011124B87377864CF7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SWHotFix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2DFAD45A236BD17A003CA177 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -150,6 +205,7 @@
 				2DFAD463236BD17A003CA177 /* AppDelegate.m in Sources */,
 				2DFAD474236BD17C003CA177 /* main.m in Sources */,
 				2DFAD466236BD17A003CA177 /* SceneDelegate.m in Sources */,
+				2DFAD47C236BD40C003CA177 /* SWHotFix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +343,7 @@
 		};
 		2DFAD478236BD17C003CA177 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEEE4707F3A64700F49B3380 /* Pods-SWHotFix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +361,7 @@
 		};
 		2DFAD479236BD17C003CA177 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02BD770258F9ABEBD9FAB2F5 /* Pods-SWHotFix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
